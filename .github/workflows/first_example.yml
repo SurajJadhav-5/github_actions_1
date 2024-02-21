@@ -1,9 +1,9 @@
-name : My_First_Workflow
+name: My_First_Workflow
 
 # trigger
 # i.e when code is pushed this workflow will be triggered 
 # we can also put multiple triggers in list format [push, fork]
-on : push 
+on: push 
 
 jobs:
     first_job:
