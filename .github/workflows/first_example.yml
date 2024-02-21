@@ -1,0 +1,21 @@
+name : My_First_Workflow
+
+# trigger
+# i.e when code is pushed this workflow will be triggered 
+# we can also put multiple triggers in list format [push, fork]
+on : push 
+
+jobs:
+    first_job:
+        # runner
+        runs-on: ubuntu-latest 
+        steps: # can have multiple steps in a job
+        - name: Welcome message
+        # command to run on ununtu runner
+          run: echo "MY first Github Actions"
+
+        - name: List files
+          run: ls
+        
+        - name: Read file
+          run: cat README.md
